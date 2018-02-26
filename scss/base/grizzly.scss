@@ -1,28 +1,6 @@
-/*
-@font-face {
-  font-family: PatuaOne-regular;
-  src: url(../fonts/patuaone-regular.woff2) format("woff2"),
-    url(../fonts/patuaone-regular.woff) format("woff");
-  font-weight: $normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Cabin-regular;
-  src: url(../fonts/cabin-regular.woff2) format("woff2"),
-    url(../fonts/cabin-regular.woff) format("woff");
-  font-weight: $normal;
-  font-style: normal;
-}
-*/
 /* stylelint-disable selector-no-qualifying-type  */
 body {
   word-wrap: break-word;
-  @include fontLoad(Arial, Cabin-regular);
-
-  &.is-fixed {
-    padding-top: #{$header/$fs}em;
-  }
 }
 
 /* stylelint-enable */
