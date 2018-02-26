@@ -19,3 +19,5 @@ svg/*
 .sass-cache
 
 dist/*
+
+package-lock.json
