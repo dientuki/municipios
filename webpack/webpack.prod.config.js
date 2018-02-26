@@ -86,11 +86,6 @@ module.exports = {
       filename:'[name]-[contenthash].css',
       allChunks: true
     }),
-    new StyleLintPlugin({
-      configFile : "stylelint-prod.json",
-      sintax : 'css',
-      files : 'dist/**/*.css',
-    }),
     new UglifyJSPlugin({
       sourceMap: false,
       uglifyOptions: {

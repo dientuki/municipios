@@ -1,3 +1,32 @@
-#menu {
-  color: #000;
+#main-menu {
+  height: (75em/$fs);
+  background: $grey;
+  text-align: center;
+
+  .view-content {
+    height: (35em/$fs);
+    margin: (20em/$fs) auto;
+  }
+
+  .views-row {
+    display: inline-block;
+    width: 115px;
+    margin: 0 30px;
+    height: 100%;
+
+    &:hover,
+    .selected {
+      .menu-logos {
+        filter: grayscale(0%);
+      }
+    }
+  }
+
+  .menu-logos {
+    filter: grayscale(100%);
+    transition: filter 500ms;
+    will-change: filter;
+  }
+
+
 }

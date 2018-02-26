@@ -92,11 +92,6 @@ module.exports = {
       root:project.paths.base(),
       verbose: false
     }),
-    new StyleLintPlugin({
-      configFile : "stylelint-dev.json",
-      sintax : 'scss',
-      files : 'scss/**/*.scss',
-    }),
     new ExtractTextPlugin({
         filename:'[name].css',
         allChunks: true
