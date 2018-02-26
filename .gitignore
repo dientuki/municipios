@@ -1,0 +1,21 @@
+#Ignore .idea (phpstorm)
+.idea
+.idea/
+
+#Ignore node modules recursive
+node_modules/
+
+#Ignore npm-debug
+npm-debug.log
+
+#enviroment config
+.env
+
+#svg files
+svg/*
+
+#Maps and cache
+*.css.map
+.sass-cache
+
+dist/*
