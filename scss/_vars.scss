@@ -1,0 +1,51 @@
+$fs:16; //font-size
+$screen-s: (360em/$fs);
+$screen-m: (500em/$fs);
+$screen-l: (750em/$fs);
+
+$header: 50; //header height
+$wrapper: 10; //wrapper main
+$padding: (20em/$fs); //padding del sitio
+$ml: 10; //margin-lef social-icons
+
+/* text colors */
+$title: #404040;
+$dropline: #626366;
+$bodyText: #404040;
+$icons: #bb2f15;
+$links: #bb2f15;
+$orange: #d26800;
+$grey-evil: #666;
+
+/* doh */
+$black: #000;
+$white: #fff;
+
+/* font-weight */
+$bold: 700;
+$normal: 400;
+
+/* bg */
+$grey: rgba($title, .4);
+$newHD: #f1912b;
+$placeholder: #e2e2e2;
+$expandable: #f7f7f7;
+$home_n2: #ececec;
+
+/* lines */
+$border: #fa9a2b;
+$hr: #999;
+
+/* degrades */
+$degMainLeft: #b63000;
+$degMainright: #da6316;
+
+$defHeaderLeft: #f4771B;
+$defHeaderMiddle: #F9a32c;
+$defHeaderRight: #Fbb633;
+
+$radialOut: #db9108;
+$radialIn: #ffffc9;
+
+/* files */
+$bannerBG: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9.5 9.5' width='9.5' height='9.5'><defs><path id='a' d='M0 0h9.5v9.5H0z'/></defs><g fill='#d4d4d4'><circle r='1.4'/><circle cx='4.7' cy='4.7' r='1.4'/><circle cx='9.5' r='1.4'/><circle cy='9.4' r='1.4'/><circle cx='9.5' cy='9.4' r='1.4'/></g></svg>";

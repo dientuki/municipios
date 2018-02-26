@@ -1,0 +1,103 @@
+{
+  "name": "Municipios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:prod": "better-npm-run build:prod && better-npm-run svg",
+    "build:dev": "better-npm-run build:dev && better-npm-run svg",
+    "test": "jest",
+    "eslint": "eslint js",
+    "svg": "svgo --config=svgo.yml -f ./images -o ./svg"
+  },
+  "betterScripts": {
+    "build:prod": {
+      "command": "better-npm-run compile && better-npm-run after:compile",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "build:dev": {
+      "command": "better-npm-run compile",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "compile": {
+      "command": "node bin/compile",
+      "env": {
+        "DEBUG": "app:*"
+      }
+    },
+    "after:compile": {
+      "command": "better-npm-run lint && npm run test"
+    },
+    "svg": {
+      "command": "npm run svg"
+    },
+    "lint": {
+      "command": "npm run eslint"
+    }
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "better-npm-run": "^0.1.0",
+    "browserslist": "^2.4.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.7",
+    "debug": "^3.0.1",
+    "eslint": "^4.7.2",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "identity-obj-proxy": "^3.0.0",
+    "image-webpack-loader": "^3.4.2",
+    "jest": "^21.1.0",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "stylelint": "^8.1.1",
+    "stylelint-scss": "^2.1.0",
+    "stylelint-webpack-plugin": "^0.9.0",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
+    "webpack": "^3.6.0",
+    "webpack-manifest-plugin": "^1.3.2"
+  },
+  "dependencies": {
+    "fontfaceobserver": "^2.0.13",
+    "vanilla-lazyload": "^10.4.2",
+    "wallop": "^2.4.1"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "browserslist": [
+    "chrome >= 30",
+    "safari >= 7",
+    "ie >= 10",
+    "Android >= 2",
+    "OperaMini >= 4",
+    "edge >= 13",
+    "Firefox >= 45",
+    "Firefox 50",
+    "bb >= 10",
+    "UCAndroid >= 2"
+  ],
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html"
+    ],
+    "coverageDirectory": "coverage",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/js/__mocks__/fileMock.js",
+      "\\.(css|less|scss)$": "identity-obj-proxy"
+    },
+    "notify": true,
+    "verbose": true
+  }
+}

@@ -1,0 +1,61 @@
+/*
+@font-face {
+  font-family: PatuaOne-regular;
+  src: url(../fonts/patuaone-regular.woff2) format("woff2"),
+    url(../fonts/patuaone-regular.woff) format("woff");
+  font-weight: $normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Cabin-regular;
+  src: url(../fonts/cabin-regular.woff2) format("woff2"),
+    url(../fonts/cabin-regular.woff) format("woff");
+  font-weight: $normal;
+  font-style: normal;
+}
+*/
+/* stylelint-disable selector-no-qualifying-type  */
+body {
+  word-wrap: break-word;
+  @include fontLoad(Arial, Cabin-regular);
+
+  &.is-fixed {
+    padding-top: #{$header/$fs}em;
+  }
+}
+
+/* stylelint-enable */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: $normal;
+}
+
+a {
+  text-decoration: none;
+  color: $links;
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+}
+
+audio {
+  width: 100%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
