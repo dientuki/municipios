@@ -7,8 +7,8 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
   entry: {
-    js:'./js/site.js',
-    css: './scss/site.scss'
+    functional:'./js/site.js',
+    design: './scss/site.scss'
   },
   output: {
     filename: '[name]-[chunkhash].js',
