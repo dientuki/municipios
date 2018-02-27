@@ -1,6 +1,7 @@
 /* eslint-disable no-new */
 import FontFaceObserver from 'fontfaceobserver';
 import Gallery from './modules/gallery/js/gallery';
+import Menu from './modules/menu/js/menu';
 import Lazyload from './modules/lazyload/js/lazyload';
 
 /*
@@ -18,3 +19,4 @@ new Gallery({
   gallery: '.Wallop'
 },
 { carousel: true }, 5000);
+new Menu();
