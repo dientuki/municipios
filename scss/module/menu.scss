@@ -1,11 +1,12 @@
 #main-menu {
+  $top: 20;
   height: (75em/$fs);
   background: $grey;
   text-align: center;
 
   .view-content {
     height: (35em/$fs);
-    margin: (20em/$fs) auto;
+    margin: #{$top/$fs}em auto;
   }
 
   .views-row {
@@ -13,12 +14,33 @@
     width: 115px;
     margin: 0 30px;
     height: 100%;
+    position: relative;
 
     &:hover,
-    .selected {
+    &.selected {
       .menu-logos {
         filter: grayscale(0%);
       }
+
+      .arrow {
+        display: block;
+        visibility: visible;
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      bottom: #{$top/-$fs}em;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 (5em/$fs) (5em/$fs) (5em/$fs);
+      border-color: transparent;
+
+      @include hide();
     }
   }
 
@@ -27,6 +49,42 @@
     transition: filter 500ms;
     will-change: filter;
   }
+}
 
+#secondary-menu {
+  $top: 36;
+  height: (113em/$fs);
+  overflow: hidden;
 
+  .container {
+    position: relative;
+  }
+
+  .secondary-menu-title {
+    $tfs:24;
+    font-size: #{$tfs/$fs}em;
+    width: (107em/$tfs);
+    position: absolute;
+    top: #{$top/$tfs}em;
+    color: $white;
+  }
+
+  .empresa {
+    margin:  #{$top/$fs}em 0 0 (200em/$fs);
+    height: (41em/$fs);
+    @include hide();
+
+    &.selected {
+      display: block;
+      visibility: visible;
+    }
+  }
+
+  .empresa-link {
+    text-transform: uppercase;
+  }
+
+  .empresa-item {
+    float:left;
+  }
 }
