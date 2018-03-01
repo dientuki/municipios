@@ -77,14 +77,19 @@ body{
   }
 
   .secondary-menu-title {
+
+    font-family: "DINN-Bold";
     $tfs:24;
     font-size: #{$tfs/$fs}em;
+    line-height: (22em/$tfs);
     width: (107em/$tfs);
     position: absolute;
     top: #{$top/$tfs}em;
     color: $white;
-  }
 
+  }
+/*    margin: 1.57143em 0 0 14.28571em;
+*/
   .empresa {
     margin:  #{$top/$fs}em 0 0 (200em/$fs);
     height: (41em/$fs);
@@ -98,12 +103,23 @@ body{
 
   .empresa-link {
     text-transform: uppercase;
-  }
+    $tfs:12;
+    font-size: #{$tfs/$fs}em;
+    line-height: (30em/$tfs);
+    color: white;
+    margin: 0 (20em/$tfs);
+      }
 
   .empresa-item {
     float:left;
   }
 }
+
+
+
+
+/*   ------------   */
+
 
 .navbar {
     position: relative;
@@ -117,33 +133,29 @@ body{
     border-color: #e7e7e7;
 }
 
-#secondary-menu .secondary-menu-title {
-    font-family: "DINN-Bold";
-    $tfs:24;
-    font-size: #{$tfs/$fs}em;
-    line-height: (22em/$tfs);
-    width: 4.45833em;
-    position: absolute;
-    top: 1.1em;
-    color: #fff;
+.navbar-nav {
+    float: right;
+    margin: 0;
 }
 
- #main-menu .art img,  #main-menu .leasing img,  #main-menu .seguros img{
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+    $tfs:12;
+    font-size: #{$tfs/$fs}em;
+    line-height: (40em/$tfs);
+
+}
+#block-bootstrap-municipios-main-menu{
+    text-transform: uppercase;
+
+}
+ #main-menu .filter-brigth img{
   filter: grayscale(100%) brightness(200%);
  }
 
-#secondary-menu .empresa-link {
-    text-transform: uppercase;
-    $tfs:12;
-    font-size: #{$tfs/$fs}em;
-    line-height: (30em/$tfs);
-    color: white;
-    margin: 0 (20em/$tfs);
-}
 
-#secondary-menu .empresa {
-    margin: 1.57143em 0 0 14.28571em;
-
+.new-messages{
+  color: #de007b;
 }
 
 
