@@ -1,0 +1,30 @@
+
+.region-anuncios {
+
+        .views-row{
+
+        border-bottom: 2px solid #bbb;
+        border-bottom-style: dotted;  
+        padding: (20em/$fs) 0;
+
+
+              .views-field-field-descripcion-corta{
+              font-size: ($fs)em;
+              line-height: (18em/$fs);
+              color: #414042;
+
+                  .views-more-link {
+                    font-size: (12em/$fs);
+                    color: #99cc33;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                  }
+            }
+             .views-field-created{
+              font-size: ($fs)em;
+              line-height: (18em/$fs);
+              color:#bbb;
+            }
+
+      }
+}
