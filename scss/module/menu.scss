@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'DINN-Regular'; 
+    src: url('../fonts/DINN-Regular.otf');
+}
+
+@font-face {
+    font-family: 'DINN-Bold'; 
+    src: url('../fonts/DINN-Bold.otf');
+}
+
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+
 #main-menu {
   $top: 20;
   height: (75em/$fs);
@@ -88,3 +104,47 @@
     float:left;
   }
 }
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+}
+
+.navbar-default {
+    background: none;
+    border-color: #e7e7e7;
+}
+
+#secondary-menu .secondary-menu-title {
+    font-family: "DINN-Bold";
+    $tfs:24;
+    font-size: #{$tfs/$fs}em;
+    line-height: (22em/$tfs);
+    width: 4.45833em;
+    position: absolute;
+    top: 1.1em;
+    color: #fff;
+}
+
+ #main-menu .art img,  #main-menu .leasing img,  #main-menu .seguros img{
+  filter: grayscale(100%) brightness(200%);
+ }
+
+#secondary-menu .empresa-link {
+    text-transform: uppercase;
+    $tfs:12;
+    font-size: #{$tfs/$fs}em;
+    line-height: (30em/$tfs);
+    color: white;
+    margin: 0 (20em/$tfs);
+}
+
+#secondary-menu .empresa {
+    margin: 1.57143em 0 0 14.28571em;
+
+}
+
+
+ 
