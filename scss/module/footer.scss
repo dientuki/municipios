@@ -1,6 +1,40 @@
 footer {
-  color: #fff;
-  background: #58595b;
+	color: #fff;
+	background: #58595b;
+	padding: (70em/$fs);
+    font-size: 1em;
+    line-height: (26em/$fs);
+
+
+	h2{
+		font-weight: bold;
+		$tfs:26;
+	    font-size: #{$tfs/$fs}em;
+	    line-height: (30em/$tfs);
+		margin-bottom: (20em/$fs);
+	}
+	
+
+	.nav a {
+	padding: 0;
+	color:#fff;
+	font-size: 1em;
+    line-height: (26em/$fs);
+
+		&:hover {
+			background:none;
+		}
+	}
+
+
+	h2{
+			font-weight: bold;
+			font-size: (26em/$fs);
+			margin-bottom: (15em/$fs);
+		}
+
+	img{
+		float: right;
+	}
+
 }
-
-
