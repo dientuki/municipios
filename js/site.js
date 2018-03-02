@@ -15,5 +15,6 @@ Promise.all([Patua.load(null, 5000), Cabin.load(null, 5000)]).then(() => {
 
 Lazyload.init();
 new Gallery('#main-news', { carousel: true, autoplay: 4000 });
-new Gallery('#last-news', { carousel: true });
+new Gallery('#last-news', { carousel: false });
+new Gallery('#testimonials', { carousel: true, autoplay: 4000 });
 new Menu();
