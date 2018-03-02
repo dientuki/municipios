@@ -157,9 +157,13 @@ body{
   filter: grayscale(100%) brightness(200%);
  }
 
-
-
-
+.badge {
+    margin-left: -3px;
+    padding: 4px 4px;
+    vertical-align: top;
+    background-color: #e04b8b;
+    border-radius: 15px;
+  }
 
 
  
