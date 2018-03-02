@@ -1,5 +1,5 @@
 import Helper from '../../helpers/js/generic';
-import Lazyload from '../../lazyload/js/lazyload';
+//import Lazyload from '../../lazyload/js/lazyload';
 import Validators from '../../helpers/js/validators';
 import Wallop from '../vendor/Wallop';
 //import '../scss/wallop.scss';
@@ -9,16 +9,13 @@ export default class Gallery {
 
   constructor(selectors, settings) {
     const defaults = { carousel: true },
-      select = ['action', 'gallery'],
       valid = ['buttonPreviousClass', 'buttonNextClass', 'itemClass', 'currentItemClass', 'showPreviousClass',
         'showNextClass', 'hidePreviousClass', 'hideNextClass', 'carousel', 'autoplay'];
 
     if (typeof selectors !== 'undefined') {
-      if (typeof selectors !== 'object') {
-        throw new Error('"settings" is mandatory and must be a json.');
+      if (typeof selectors !== 'string') {
+        throw new Error('"settings" is mandatory and must be a string.');
       }
-
-      Validators.settings(selectors, select);
     }
 
     if (typeof settings !== 'undefined') {
@@ -29,42 +26,10 @@ export default class Gallery {
       Validators.settings(settings, valid);
     }
 
-    this.selectors = selectors;
-    //this.init(Helper.merge_objects(defaults, settings), miliseconds);
-    new Wallop(document.querySelector(this.selectors.gallery), settings);
-  }
+    const element = document.querySelector(selectors);
 
-  /*
-  init(settings, miliseconds) {
-    const gallery = document.querySelector(this.selectors.gallery);
-
-    if (gallery !== null) {
-      this.slider = new Wallop(gallery, settings);
-      this.onClick(miliseconds);
+    if (element !== null) {
+      new Wallop(element, Helper.merge_objects(defaults, settings));
     }
   }
-
-  onClick(miliseconds) {
-    if (this.selectors.action === undefined) {
-      Lazyload.init({ elements_selector: `#${document.querySelector(this.selectors.gallery).id} .delay-lzl` });
-      return false;
-    }
-
-    const action = document.querySelector(this.selectors.action);
-
-    action.addEventListener('click', () => {
-      this.slider.on('change', () => {
-        setTimeout(() => {
-          this.slider.next();
-        }, miliseconds || 2000);
-      });
-
-      this.slider.next();
-      action.remove();
-      Lazyload.init({elements_selector: `#${document.querySelector(this.selectors.gallery).id} .delay-lzl`});
-    });
-
-    return true;
-  }
-  */
 }
