@@ -7,7 +7,7 @@ import Wallop from '../vendor/Wallop';
 
 export default class Gallery {
 
-  constructor(selectors, settings) {
+  constructor(selectors, settings, dot) {
     const defaults = { carousel: true },
       valid = ['buttonPreviousClass', 'buttonNextClass', 'itemClass', 'currentItemClass', 'showPreviousClass',
         'showNextClass', 'hidePreviousClass', 'hideNextClass', 'carousel', 'autoplay'];
@@ -26,10 +26,27 @@ export default class Gallery {
       Validators.settings(settings, valid);
     }
 
-    const element = document.querySelector(selectors);
+    this.element = document.querySelector(selectors);
+    this.dot = this.element.querySelector(dot)
 
-    if (element !== null) {
-      new Wallop(element, Helper.merge_objects(defaults, settings));
+    if (this.element !== null) {
+      this.wallop = new Wallop(this.element, Helper.merge_objects(defaults, settings));
+
+      if (this.dot !== null) {
+        this.change();
+      }
     }
+  }
+
+  change(){
+    this.wallop.on('change', (event) => {
+      const dots = this.dot.querySelectorAll('.dot');
+
+      Array.from(dots).forEach((dot) => {
+        dot.classList.remove('selected');
+      });
+      dots[event.detail.currentItemIndex].classList.add('selected');
+
+    });
   }
 }
