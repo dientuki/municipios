@@ -1,12 +1,14 @@
 .region-accesos {
 
+	margin-bottom: (40em/$fs);
+
   .view-content {
     height: (60em/$fs);
   }
 
   .views-row {
     display: inline-block;
-    margin: 0 30px;
+    margin: 0 (15em/$fs);
     position: relative;
   }
 }
