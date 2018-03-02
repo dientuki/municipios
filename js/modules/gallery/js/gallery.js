@@ -1,17 +1,17 @@
 import Helper from '../../helpers/js/generic';
 import Lazyload from '../../lazyload/js/lazyload';
 import Validators from '../../helpers/js/validators';
-import Wallop from 'wallop';
-import '../scss/wallop.scss';
-import '../scss/wallop--fade.scss';
+import Wallop from '../vendor/Wallop';
+//import '../scss/wallop.scss';
+//import '../scss/wallop--slide.scss';
 
 export default class Gallery {
 
-  constructor(selectors, settings, miliseconds) {
+  constructor(selectors, settings) {
     const defaults = { carousel: true },
       select = ['action', 'gallery'],
       valid = ['buttonPreviousClass', 'buttonNextClass', 'itemClass', 'currentItemClass', 'showPreviousClass',
-        'showNextClass', 'hidePreviousClass', 'hideNextClass', 'carousel'];
+        'showNextClass', 'hidePreviousClass', 'hideNextClass', 'carousel', 'autoplay'];
 
     if (typeof selectors !== 'undefined') {
       if (typeof selectors !== 'object') {
@@ -30,9 +30,11 @@ export default class Gallery {
     }
 
     this.selectors = selectors;
-    this.init(Helper.merge_objects(defaults, settings), miliseconds);
+    //this.init(Helper.merge_objects(defaults, settings), miliseconds);
+    new Wallop(document.querySelector(this.selectors.gallery), settings);
   }
 
+  /*
   init(settings, miliseconds) {
     const gallery = document.querySelector(this.selectors.gallery);
 
@@ -64,5 +66,5 @@ export default class Gallery {
 
     return true;
   }
-
+  */
 }
