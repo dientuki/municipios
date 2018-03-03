@@ -52,8 +52,8 @@
     display: inline-block;
     border-radius: 10em;
     overflow: hidden;
-    width: 1em;
-    height: 1em;
+    width: (10em/$fs);
+    height:(10em/$fs);
     background: #e5e5e5;
     will-change: background-color;
     transition: background-color 500ms;

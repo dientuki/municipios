@@ -1,5 +1,6 @@
 
 .region-anuncios {
+        margin-top: (18em/$fs);
 
         .views-row{
 
@@ -26,5 +27,16 @@
               color:#bbb;
             }
 
-      }
+        }
+
+      .anuncios-default{
+            height: 334px;
+            overflow: scroll;
+            }
+
+      .anuncios-fijos{
+              background-color: grey;
+            }
+      
+      
 }
