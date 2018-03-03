@@ -2,11 +2,15 @@
 .region-sidebar-second{
 
     .view-content{
-      background-color: #e5e5e5;
+      background-color: #f2f2f2;
+      height: 547px;
+      overflow: scroll;
 
           .views-row{
-            border-bottom: 1px solid #fff;
-            border-bottom-style: dotted;  
+            background-image: linear-gradient(to right, #fff 40%, rgba(100, 100, 100, 0) 0%);
+            background-position: top;
+            background-size: 4px 1px;
+            background-repeat: repeat-x;
             padding: (15em/$fs) (15em/$fs);
             
                  .views-field-field-descripcion-corta{
