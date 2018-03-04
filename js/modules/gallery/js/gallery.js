@@ -34,6 +34,7 @@ export default class Gallery {
 
       if (this.dot !== null) {
         this.change();
+        this.click();
       }
     }
   }
@@ -47,6 +48,15 @@ export default class Gallery {
       });
       dots[event.detail.currentItemIndex].classList.add('selected');
 
+    });
+  }
+
+  click(){
+    Array.from(this.dot.querySelectorAll('.dot')).forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        //console.log(this, index, a)
+        this.wallop.goTo(index)
+      });
     });
   }
 }

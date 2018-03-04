@@ -57,6 +57,7 @@
     background: #e5e5e5;
     will-change: background-color;
     transition: background-color 500ms;
+    cursor: pointer;
 
     &.selected {
       background: #9aca3c;
