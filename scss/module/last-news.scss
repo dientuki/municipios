@@ -1,0 +1,37 @@
+#last-news {
+
+  .wallop-wrapper {
+    position: relative;
+    width: calc(100% - #{70em/$fs});
+    margin: 0 auto;
+  }
+
+  .Wallop-buttonPrevious,
+  .Wallop-buttonNext {
+    width: (28em/$fs);
+    height: 100%;
+    position: absolute;
+    top: 0;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+  }
+
+  .Wallop-buttonPrevious {
+    left: (-28em/$fs);;
+  }
+
+  .Wallop-buttonNext {
+    right: (-28em/$fs);;
+  }
+
+  .more-link {
+    width: (100em/$fs);
+    margin: 2em auto 0 auto;
+    
+  }
+}
