@@ -1,0 +1,40 @@
+.region-testimonios{
+
+	 .block-title{
+      color: #9aca3c;
+      font-family: "DINN-Regular";
+      font-size: (24em/$fs);
+      text-transform: uppercase;
+      margin-bottom: (10em/$fs);
+      text-align: center;
+    }
+    .views-field-field-descripcion-corta{
+      color: #999999;
+      font-family: "DINN-Light";
+      $tfs:24;
+      font-size: #{$tfs/$fs}em;
+      line-height: (30em/$tfs);
+      text-align: center;
+	
+    }
+    .views-field-title{
+      			font-size: 1em;
+      			line-height: (18em/$fs);
+      			font-weight: bold;
+      			text-align: center;
+      			      margin-top: (20em/$fs);
+
+
+      		}
+      		.views-field-field-cargo{
+      			font-size: 1em;
+      			line-height: (18em/$fs);
+      			text-align: center;
+      			      margin-bottom: (20em/$fs);
+
+      		}
+
+
+
+
+}
