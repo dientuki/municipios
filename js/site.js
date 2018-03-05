@@ -21,6 +21,7 @@ new Gallery('#main-news', {
 //new Gallery('#last-news', { carousel: false });
 new Gallery('#testimonials', {
   autoPlay: 4000,
+  adaptiveHeight: true,
   prevNextButtons: false
 });
 new Menu();
