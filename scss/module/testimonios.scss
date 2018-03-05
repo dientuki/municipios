@@ -30,7 +30,11 @@
     line-height: (18em/$fs);
     text-align: center;
     margin-bottom: (20em/$fs);
+  }
 
+  .views-row {
+    width: 100%;
+    margin: 0;
   }
 
 }

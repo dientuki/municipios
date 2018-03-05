@@ -19,5 +19,8 @@ new Gallery('#main-news', {
   prevNextButtons: false
 });
 //new Gallery('#last-news', { carousel: false });
-//new Gallery('#testimonials', { carousel: true, autoplay: 4000 }, '.dots');
+new Gallery('#testimonials', {
+  autoPlay: 4000,
+  prevNextButtons: false
+});
 new Menu();
