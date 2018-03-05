@@ -56,6 +56,10 @@
   height: (113em/$fs);
   overflow: hidden;
 
+  .empresa-drowpdown-wrapper {
+    @include hide();
+  }
+
   .container {
     position: relative;
   }
@@ -95,6 +99,28 @@
 
   .empresa-item {
     float: left;
+  }
+}
+
+@media (max-width: (767em/$fs)) {
+  #secondary-menu {
+    height: (91em/$fs);
+
+    .empresa-item {
+      @include hide();
+    }
+
+    .empresa-drowpdown-wrapper {
+      display: block;
+      visibility: visible;
+      position: absolute;
+    }
+
+    .secondary-menu-title,
+    .empresa-drowpdown-wrapper {
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
