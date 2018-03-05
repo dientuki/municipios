@@ -5,7 +5,8 @@ export default class Menu {
   constructor() {
     const empresas = document.querySelectorAll('#main-menu .empresa'),
       secondaries = document.querySelectorAll('#secondary-menu .empresa'),
-      secondary_menu = document.querySelector('#secondary-menu');
+      secondary_menu = document.querySelector('#secondary-menu'),
+      accesos = document.querySelector('#accesos-drowpdown');
 
     Array.from(empresas).forEach((empresa, index) => {
       empresa.addEventListener('mouseover', function (event) {
@@ -27,8 +28,6 @@ export default class Menu {
     });
 
     Array.from(secondary_menu.querySelectorAll('.empresa-drowpdown')).forEach( (dropdow) => {
-      console.log(dropdow);
-
       dropdow.addEventListener('change', (event) => {
         if (event.target.selectedIndex === 0) {
           return;
@@ -37,6 +36,20 @@ export default class Menu {
         location.assign(`${window.location.protocol}//${window.location.host}${event.target.value}`);
       });
     });
+
+    if (accesos.length === 1) {
+      accesos.addEventListener('change', (event) => {
+        if (event.target.selectedIndex === 0) {
+          return;
+        }
+
+        location.assign(`${window.location.protocol}//${window.location.host}${event.target.value}`);
+      });
+    }
+
+
+
+
   }
 
 
