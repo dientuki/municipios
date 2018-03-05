@@ -3,6 +3,7 @@
   height: (75em/$fs);
   background: $grey;
   text-align: center;
+  overflow: hidden;
 
   .view-content {
     height: (35em/$fs);

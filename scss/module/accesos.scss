@@ -1,9 +1,10 @@
 .region-accesos {
-
   margin-bottom: (40em/$fs);
+  height: (75em/$fs);
+  overflow: hidden;
 
-  .view-content {
-    height: (60em/$fs);
+  .accesos-drowpdown {
+    @include hide();
   }
 
   .views-row {
@@ -11,4 +12,29 @@
     margin: 0 (15em/$fs);
     position: relative;
   }
+}
+
+@media (max-width: (767em/$fs)) {
+
+  .region-accesos {
+    position: relative;
+    border-bottom: solid (1em/$fs) black;
+
+    .accesos-drowpdown {
+      display: block;
+      visibility: visible;
+      top:50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      position: absolute;
+    }
+
+    .view-content {
+      @include hide();
+    }
+  }
+
+
+
+
 }

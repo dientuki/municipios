@@ -28,29 +28,22 @@ export default class Menu {
     });
 
     Array.from(secondary_menu.querySelectorAll('.empresa-drowpdown')).forEach( (dropdow) => {
-      dropdow.addEventListener('change', (event) => {
-        if (event.target.selectedIndex === 0) {
-          return;
-        }
-
-        location.assign(`${window.location.protocol}//${window.location.host}${event.target.value}`);
-      });
+      this.change(dropdow);
     });
 
-    if (accesos.length === 1) {
-      accesos.addEventListener('change', (event) => {
-        if (event.target.selectedIndex === 0) {
-          return;
-        }
-
-        location.assign(`${window.location.protocol}//${window.location.host}${event.target.value}`);
-      });
+    if (accesos !== null) {
+      this.change(accesos);
     }
-
-
-
-
   }
 
+  change(dropdow){
+    dropdow.addEventListener('change', (event) => {
+      if (event.target.selectedIndex === 0) {
+        return;
+      }
+
+      location.assign(`${window.location.protocol}//${window.location.host}${event.target.value}`);
+    });
+  }
 
 }
