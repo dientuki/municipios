@@ -19,7 +19,11 @@ new Flickity('#main-news', {
   autoPlay: 4000,
   prevNextButtons: false
 });
-//new Gallery('#last-news', { carousel: false });
+new Gallery('#last-news', {
+  contain: true,
+  pageDots: false,
+  groupCells: 4
+});
 new Flickity('#testimonials', {
   autoPlay: 4000,
   adaptiveHeight: true,

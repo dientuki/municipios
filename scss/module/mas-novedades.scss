@@ -1,34 +1,4 @@
 #last-news {
-
-  .wallop-wrapper {
-    position: relative;
-    margin: 0 auto;
-  }
-
-  .Wallop-buttonPrevious,
-  .Wallop-buttonNext {
-    width: (28em/$fs);
-    height: 100%;
-    position: absolute;
-    top: 0;
-    cursor: pointer;
-
-    svg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateY(-50%) translateX(-50%);
-    }
-  }
-
-  .Wallop-buttonPrevious {
-    left: (-28em/$fs);
-  }
-
-  .Wallop-buttonNext {
-    right: (-28em/$fs);
-  }
-
   .form-group {
 
     width: 100%;
@@ -47,6 +17,14 @@
       text-transform: uppercase;
     }
   }
+
+  &:not(.flickity-enabled) {
+    .views-row:nth-child(n+5){
+      @include hide();
+    }
+  }
+
+
 }
 
 .region-mas-novedades {
@@ -59,36 +37,35 @@
     margin: (20em/$fs) 0 (10em/$fs) 0;
     text-align: center;
   }
-  .Wallop-item {
 
-    .views-field-title {
-      font-family: "DINN-Bold";
-      $tfs: 18;
-      font-size: #{$tfs/$fs}em;
-      line-height: (18em/$tfs);
-      margin: (10em/$fs) 0 (15em/$fs) 0;
-      color: #1a1a1a;
-    }
+  .views-field-title {
+    font-family: "DINN-Bold";
+    $tfs: 18;
+    font-size: #{$tfs/$fs}em;
+    line-height: (18em/$tfs);
+    margin: (10em/$fs) 0 (15em/$fs) 0;
+    color: #1a1a1a;
+  }
 
-    .views-field-field-descripcion-corta {
-      font-size: 1em;
-      line-height: (18em/$fs);
-      color: #414042;
+  .views-field-field-descripcion-corta {
+    font-size: 1em;
+    line-height: (18em/$fs);
+    color: #414042;
 
-      .views-more-link {
-        font-size: (12em/$fs);
-        color: #99cc33;
-        text-transform: uppercase;
-        font-weight: bold;
-      }
-    }
-
-    .views-field-created {
-      font-size: ($fs) em;
-      line-height: (18em/$fs);
-      color: #bbb;
+    .views-more-link {
+      font-size: (12em/$fs);
+      color: #99cc33;
+      text-transform: uppercase;
+      font-weight: bold;
     }
   }
+
+  .views-field-created {
+    font-size: ($fs) em;
+    line-height: (18em/$fs);
+    color: #bbb;
+  }
+
   .views-row {
     height: (330em/$fs);
     position: relative;

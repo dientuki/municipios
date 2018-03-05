@@ -4,13 +4,42 @@ import Flickity from 'flickity';
 
 export default class Gallery {
 
-  constructor(selectors, settings, dot) {
+  constructor(selectors, settings) {
 
     this.element = document.querySelector(selectors);
-    this.dot = this.element.querySelector(dot)
+    this.settings = settings;
+    this.isWorking = false;
 
-    this.flickity = new Flickity(this.element, settings);
+    if (window.innerWidth > 991) {
+      this.create();
+    }
+    this.resize();
+  }
 
+  create() {
+    this.flickity = new Flickity(this.element, this.settings);
+  }
+
+  destroy() {
+    this.flickity.destroy();
+  }
+
+  resize() {
+    window.addEventListener('resize', ()=> {
+
+      const isWorking = window.innerWidth >= 991;
+
+      if (this.isWorking !== isWorking) {
+        this.isWorking = isWorking;
+
+        if (this.isWorking) {
+          this.create();
+        } else {
+          this.destroy();
+        }
+      }
+
+    });
   }
 
 }
