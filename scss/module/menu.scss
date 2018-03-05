@@ -5,6 +5,10 @@
   text-align: center;
   overflow: hidden;
 
+  .flickity-viewport {
+    overflow: visible;
+  }
+  
   .view-content {
     height: (35em/$fs);
     margin: #{$top/$fs}em auto;

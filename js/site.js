@@ -24,4 +24,13 @@ new Gallery('#testimonials', {
   adaptiveHeight: true,
   prevNextButtons: false
 });
+
+new Gallery('#main-menu-slider', {
+  freeScroll: true,
+  contain: true,
+  prevNextButtons: false,
+  pageDots: false
+});
+
+
 new Menu();
