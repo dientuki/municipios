@@ -1,5 +1,6 @@
 /* eslint-disable no-new */
 import FontFaceObserver from 'fontfaceobserver';
+import Flickity from 'flickity';
 import Gallery from './modules/gallery/js/gallery';
 import Menu from './modules/menu/js/menu';
 import Lazyload from './modules/lazyload/js/lazyload';
@@ -14,23 +15,22 @@ Promise.all([Patua.load(null, 5000), Cabin.load(null, 5000)]).then(() => {
 */
 
 Lazyload.init();
-new Gallery('#main-news', {
+new Flickity('#main-news', {
   autoPlay: 4000,
   prevNextButtons: false
 });
 //new Gallery('#last-news', { carousel: false });
-new Gallery('#testimonials', {
+new Flickity('#testimonials', {
   autoPlay: 4000,
   adaptiveHeight: true,
   prevNextButtons: false
 });
 
-new Gallery('#main-menu-slider', {
+new Flickity('#main-menu-slider', {
   freeScroll: true,
   contain: true,
   prevNextButtons: false,
   pageDots: false
 });
-
 
 new Menu();
