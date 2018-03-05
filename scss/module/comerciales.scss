@@ -1,43 +1,43 @@
 
-.region-sidebar-second{
+.region-sidebar-second {
 
-    .view-content{
-      background-color: #f2f2f2;
-      height: 547px;
-      overflow: scroll;
+  .view-content {
+    background-color: #f2f2f2;
+    height: 547px;
+    overflow: scroll;
 
-          .views-row{
-            background-image: linear-gradient(to right, #fff 40%, rgba(100, 100, 100, 0) 0%);
-            background-position: top;
-            background-size: 4px 1px;
-            background-repeat: repeat-x;
-            padding: (15em/$fs) (15em/$fs);
-            
-                 .views-field-field-descripcion-corta{
-                  color:#1a1a1a;
-                  font-weight: bold;
+    .views-row {
+      background-image: linear-gradient(to right, #fff 40%, rgba(100, 100, 100, 0) 0%);
+      background-position: top;
+      background-size: 4px 1px;
+      background-repeat: repeat-x;
+      padding: (15em/$fs) (15em/$fs);
 
-                      .views-more-link {
-                      font-size: (12em/$fs);
-                      color: #99cc33;
-                      text-transform: uppercase;
-                      font-weight: bold;
-                    }
-                }
+      .views-field-field-descripcion-corta {
+        color: #1a1a1a;
+        font-weight: bold;
 
-              .views-field-created{
-              font-size: ($fs)em;
-              line-height: (18em/$fs);
-              color:#bbb;
-            }
-          }
+        .views-more-link {
+          font-size: (12em/$fs);
+          color: #99cc33;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+
+      .views-field-created {
+        font-size: ($fs) em;
+        line-height: (18em/$fs);
+        color: #bbb;
+      }
     }
+  }
 
-    .block-title{
-      color: #9aca3c;
-      font-family: "DINN-Regular";
-      font-size: (24em/$fs);
-      text-transform: uppercase;
-      margin-bottom: (10em/$fs);
-    }
+  .block-title {
+    color: #9aca3c;
+    font-family: "DINN-Regular";
+    font-size: (24em/$fs);
+    text-transform: uppercase;
+    margin-bottom: (10em/$fs);
+  }
 }

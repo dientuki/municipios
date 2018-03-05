@@ -62,7 +62,7 @@
 
   .secondary-menu-title {
     font-family: "DINN-Bold";
-    $tfs:24;
+    $tfs: 24;
     font-size: #{$tfs/$fs}em;
     line-height: (22em/$tfs);
     width: (107em/$tfs);
@@ -71,10 +71,10 @@
     color: $white;
 
   }
-/*    margin: 1.57143em 0 0 14.28571em;
-*/
+  /*    margin: 1.57143em 0 0 14.28571em;
+  */
   .empresa {
-    margin:  #{$top/$fs}em 0 0 (200em/$fs);
+    margin: #{$top/$fs}em 0 0 (200em/$fs);
     height: (41em/$fs);
     @include hide();
 
@@ -86,68 +86,65 @@
 
   .empresa-link {
     text-transform: uppercase;
-    $tfs:12;
+    $tfs: 12;
     font-size: #{$tfs/$fs}em;
     line-height: (30em/$tfs);
     color: white;
     margin: 0 (20em/$tfs);
-      }
+  }
 
   .empresa-item {
-    float:left;
+    float: left;
   }
 }
-
-
-
 
 /*   ------------   */
 
-
 .navbar {
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 0;
-    border: 1px solid transparent;
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0;
+  border: 1px solid transparent;
 }
 
 .navbar-default {
-    background: none;
-    border-color: #e7e7e7;
+  background: none;
+  border-color: #e7e7e7;
 }
 
 .navbar-nav {
-    float: right;
-    margin: 0;
+  float: right;
+  margin: 0;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #777;
-    $tfs:12;
-    font-size: #{$tfs/$fs}em;
-    line-height: (40em/$tfs);
+  color: #777;
+  $tfs: 12;
+  font-size: #{$tfs/$fs}em;
+  line-height: (40em/$tfs);
 
 }
 
-#navbar .have-new-messages{
+#navbar .have-new-messages {
   color: #de007b;
 }
 
-#block-bootstrap-municipios-main-menu{
-    text-transform: uppercase;
+#block-bootstrap-municipios-main-menu {
+  text-transform: uppercase;
 
 }
- #main-menu .filter-brigth img{
+
+#main-menu .filter-brigth img {
   filter: grayscale(100%) brightness(200%);
- }
+}
 
 .badge {
-    margin-left: -3px;
-    padding: 4px 4px;
-    vertical-align: top;
-    background-color: #e04b8b;
-    border-radius: 15px;
-  }
+  margin-left: -3px;
+  padding: 4px 4px;
+  vertical-align: top;
+  background-color: #e04b8b;
+  border-radius: 15px;
+}
 
 
  

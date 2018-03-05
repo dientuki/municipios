@@ -1,49 +1,47 @@
 
 .region-anuncios {
-        margin-top: (44em/$fs);
+  margin-top: (44em/$fs);
 
-        .views-row{
+  .views-row {
 
-        background-image: linear-gradient(to right, #c6c7c8 40%, rgba(100, 100, 100, 0) 0%);
-        background-position: top;
-        background-size: 4px 1px;
-        background-repeat: repeat-x;
-        padding: (20em/$fs);
+    background-image: linear-gradient(to right, #c6c7c8 40%, rgba(100, 100, 100, 0) 0%);
+    background-position: top;
+    background-size: 4px 1px;
+    background-repeat: repeat-x;
+    padding: (20em/$fs);
 
+    .views-field-field-descripcion-corta {
+      font-size: ($fs) em;
+      line-height: (18em/$fs);
+      color: #414042;
 
-              .views-field-field-descripcion-corta{
-              font-size: ($fs)em;
-              line-height: (18em/$fs);
-              color: #414042;
-
-                  .views-more-link {
-                    font-size: (12em/$fs);
-                    color: #99cc33;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                  }
-            }
-             .views-field-created{
-              font-size: ($fs)em;
-              line-height: (18em/$fs);
-              color:#bbb;
-            }
-
-        }
-
-      .anuncios-default{
-            height: 334px;
-            overflow: scroll;
+      .views-more-link {
+        font-size: (12em/$fs);
+        color: #99cc33;
+        text-transform: uppercase;
+        font-weight: bold;
       }
+    }
+    .views-field-created {
+      font-size: ($fs) em;
+      line-height: (18em/$fs);
+      color: #bbb;
+    }
 
-      .anuncios-fijos{
-              background-color: #f4f5f6;
+  }
 
-              .views-field-field-descripcion-corta{
-              font-weight: bold;
-              }
+  .anuncios-default {
+    height: 334px;
+    overflow: scroll;
+  }
 
-      }
-      
-      
+  .anuncios-fijos {
+    background-color: #f4f5f6;
+
+    .views-field-field-descripcion-corta {
+      font-weight: bold;
+    }
+
+  }
+
 }
