@@ -1,24 +1,3 @@
-@font-face {
-    font-family: 'DINN-Regular'; 
-    src: url('../fonts/DINN-Regular.otf');
-}
-
-@font-face {
-    font-family: 'DINN-Bold'; 
-    src: url('../fonts/DINN-Bold.otf');
-}
-
-@font-face {
-    font-family: 'DINN-Light'; 
-    src: url('../fonts/DINN-Light.otf');
-}
-
-body{
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-
-
 #main-menu {
   $top: 20;
   height: (75em/$fs);

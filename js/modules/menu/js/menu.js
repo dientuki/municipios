@@ -25,6 +25,18 @@ export default class Menu {
         secondary_menu.style.backgroundColor = secondaries[index].dataset.bg;
       });
     });
+
+    Array.from(secondary_menu.querySelectorAll('.empresa-drowpdown')).forEach( (dropdow) => {
+      console.log(dropdow);
+
+      dropdow.addEventListener('change', (event) => {
+        if (event.target.selectedIndex === 0) {
+          return;
+        }
+
+        location.assign(`${window.location.protocol}//${window.location.host}${event.target.value}`);
+      });
+    });
   }
 
 
