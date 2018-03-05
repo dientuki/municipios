@@ -8,7 +8,7 @@
   .flickity-viewport {
     overflow: visible;
   }
-  
+
   .view-content {
     height: (35em/$fs);
     margin: #{$top/$fs}em auto;
@@ -109,29 +109,29 @@
 
 @media (max-width: (767em/$fs)) {
 
-  .nav > li{
-      margin: 10px;
-      background: #fbfbfb;
+  .nav > li {
+    margin: 10px;
+    background: #fbfbfb;
 
-      a{
-        line-height: 1em !important;
-      }
+    a {
+      line-height: 1em !important;
+    }
   }
 
   .region-navbar-logo {
 
-        a{
-        width: 70% !important;
-      }
+    a {
+      width: 70% !important;
+    }
 
-      img{
-        width: 100% !important;
-      }
+    img {
+      width: 100% !important;
+    }
   }
   .navbar-nav {
-    float: inherit; 
+    float: inherit;
     width: 50%;
-    }
+  }
 
   #secondary-menu {
     height: (91em/$fs);
@@ -141,7 +141,8 @@
     }
 
     .empresa {
-    margin-left: (145em/$fs);}
+      margin-left: (145em/$fs);
+    }
 
     .empresa-drowpdown-wrapper {
       display: block;
@@ -154,37 +155,36 @@
       top: 50%;
       transform: translateY(-50%);
 
-        select{
-          background: #eaeaea;
-          border: none;
-          width: 100%;
-          height: 40px;
-          border-radius: 0;
-          color: #585858;
-          padding: 0 8px;
-        }
+      select {
+        background: #eaeaea;
+        border: none;
+        width: 100%;
+        height: 40px;
+        border-radius: 0;
+        color: #585858;
+        padding: 0 8px;
+      }
     }
   }
 
-  #accesos-drowpdown{
+  #accesos-drowpdown {
 
-         background: #eaeaea;
-          border: none;
-          width: 90%;
-          height: 40px;
-          border-radius: 0;
-          color: #585858;
-          padding: 0 8px;
+    background: #eaeaea;
+    border: none;
+    width: 90%;
+    height: 40px;
+    border-radius: 0;
+    color: #585858;
+    padding: 0 8px;
 
-          }
+  }
 }
 
 /*   ------------   */
 
-.navbar-header{
-   margin-left: 0 !important; 
+.navbar-header {
+  margin-left: 0 !important;
 }
-
 
 .navbar {
   position: relative;
@@ -203,8 +203,6 @@
   margin: 0;
 }
 
-
-
 .navbar-default .navbar-nav > li > a {
   color: #777;
   $tfs: 12;
@@ -222,44 +220,44 @@
 
 }
 
-#main-menu 
+#main-menu {
+  .filter-brigth img {
+    filter: grayscale(100%) brightness(200%);
+  }
 
-    .filter-brigth img {
-      filter: grayscale(100%) brightness(200%);
+  .gradient-mask {
+    position: absolute;
+    height: 75px;
+    width: 50px;
+    z-index: 999;
+    right: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(234, 234, 234, 1) 100%);
+  }
+
+  .badge {
+    margin-left: -3px;
+    padding: 4px 4px;
+    vertical-align: top;
+    background-color: #e04b8b;
+    border-radius: 15px;
+  }
+
+  .navbar-default
+  .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background: none;
+  }
+
+  .navbar-toggle {
+    border: none;
+    margin-top: 10px;
+
+    .icon-bar {
+      background-color: #eaeaea !important;
+      width: 32px;
+      height: 5px;
     }
-
-    .gradient-mask{
-      position: absolute;
-      height: 75px;
-      width: 50px;
-      z-index: 999;
-      right:0;
-      background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(234,234,234,1) 100%);
-      } 
-
-    .badge {
-      margin-left: -3px;
-      padding: 4px 4px;
-      vertical-align: top;
-      background-color: #e04b8b;
-      border-radius: 15px;
-}
-
-.navbar-default 
-
-    .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
-      background: none;
-    }
-
-    .navbar-toggle{
-      border:none;
-      margin-top: 10px;
-
-        .icon-bar{
-          background-color: #eaeaea !important;
-          width: 32px;
-          height: 5px;
-        }
+  }
 }
  
 
