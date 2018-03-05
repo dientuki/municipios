@@ -45,8 +45,9 @@
   height: 100%;
 }
 
-.dots {
+.flickity-page-dots {
   text-align: center;
+  bottom: (20em/$fs);
 
   .dot {
     display: inline-block;
@@ -58,8 +59,9 @@
     will-change: background-color;
     transition: background-color 500ms;
     cursor: pointer;
+    margin: 0 .5em;
 
-    &.selected {
+    &.is-selected {
       background: #9aca3c;
     }
   }

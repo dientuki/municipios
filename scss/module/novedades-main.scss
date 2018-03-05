@@ -7,37 +7,40 @@
     text-transform: uppercase;
     margin-bottom: (10em/$fs);
   }
-  .Wallop-item {
 
-    .views-field-title {
-      font-family: "DINN-Bold";
-      $tfs: 24;
-      font-size: #{$tfs/$fs}em;
-      line-height: (22em/$tfs);
-      margin: (10em/$fs) 0 (15em/$fs) 0;
-      color: #1a1a1a;
+  .views-row {
+    width: 100%;
+    margin: 0;
+  }
 
+  .views-field-title {
+    font-family: "DINN-Bold";
+    $tfs: 24;
+    font-size: #{$tfs/$fs}em;
+    line-height: (22em/$tfs);
+    margin: (10em/$fs) 0 (15em/$fs) 0;
+    color: #1a1a1a;
+
+  }
+
+  .views-field-field-descripcion-corta {
+    $tfs: 16;
+    font-size: #{$tfs/$fs}em;
+    line-height: (22em/$tfs);
+    color: #414042;
+
+    .views-more-link {
+      font-size: (12em/$fs);
+      color: #99cc33;
+      text-transform: uppercase;
+      font-weight: bold;
     }
+  }
 
-    .views-field-field-descripcion-corta {
-      $tfs: 16;
-      font-size: #{$tfs/$fs}em;
-      line-height: (22em/$tfs);
-      color: #414042;
-
-      .views-more-link {
-        font-size: (12em/$fs);
-        color: #99cc33;
-        text-transform: uppercase;
-        font-weight: bold;
-      }
-    }
-
-    .views-field-created {
-      font-size: ($fs) em;
-      line-height: (18em/$fs);
-      color: #bbb;
-    }
+  .views-field-created {
+    font-size: ($fs) em;
+    line-height: (18em/$fs);
+    color: #bbb;
   }
 }
 
@@ -47,4 +50,5 @@
   background-position: bottom;
   background-size: 4px 1px;
   background-repeat: repeat-x;
-}    
+  overflow: hidden;
+}

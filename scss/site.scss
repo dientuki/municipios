@@ -1,6 +1,8 @@
 @import "vars";
 @import "mixin";
 
+@import "module/flickity";
+
 @import "base/normalize";
 @import "base/grizzly";
 @import "base/helpers";
@@ -16,8 +18,3 @@
 @import "module/comerciales";
 @import "module/mas-novedades";
 @import "module/testimonios";
-
-
-
-@import "module/wallop";
-@import "module/wallop--slide";
