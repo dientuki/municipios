@@ -118,8 +118,15 @@
       }
   }
 
-  .region-navbar-logo img{
-    width: 80% !important;
+  .region-navbar-logo {
+
+        a{
+        width: 70% !important;
+      }
+
+      img{
+        width: 100% !important;
+      }
   }
   .navbar-nav {
     float: inherit; 
