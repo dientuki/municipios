@@ -3,6 +3,10 @@
   color: #000;
 }
 
+#page-wrapper {
+  overflow: hidden;
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1280px;

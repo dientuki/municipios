@@ -221,18 +221,22 @@
 }
 
 #main-menu {
-  .filter-brigth img {
-    filter: grayscale(100%) brightness(200%);
-  }
+  position: relative;
 
-  .gradient-mask {
+  &:before {
     position: absolute;
     height: 75px;
     width: 50px;
     z-index: 999;
     right: 0;
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(234, 234, 234, 1) 100%);
+    content:"";
   }
+
+  .filter-brigth img {
+    filter: grayscale(100%) brightness(200%);
+  }
+
 
   .badge {
     margin-left: -3px;
