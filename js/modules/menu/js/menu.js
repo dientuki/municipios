@@ -8,6 +8,9 @@ export default class Menu {
       secondary_menu = document.querySelector('#secondary-menu'),
       accesos = document.querySelector('#accesos-drowpdown');
 
+    empresas[0].classList.add('selected');
+    secondaries[0].classList.add('selected');
+
     Array.from(empresas).forEach((empresa, index) => {
       empresa.addEventListener('mouseover', function (event) {
         if (this.classList.contains("selected") == true) {
